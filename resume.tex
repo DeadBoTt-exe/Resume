@@ -1,0 +1,206 @@
+%-------------------------
+% Resume in Latex
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+  \textbf{\Huge \scshape K Bhaskar Chari} \\[1pt]
+  \small Ph.no.:+91 9010583888 $|$
+  \href{mailto:charibhaskar2608@gmail.com}{\underline{charibhaskar2608@gmail.com}} $|$
+  \href{https://www.linkedin.com/in/bhaskar-chari/}{\underline{www.linkedin.com/in/bhaskar-chari}} $|$
+  \href{https://github.com/DeadBoTt-exe}{\underline{\nolinkurl{github.com/DeadBoTt-exe}}} \\
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {VIT Bhopal University}{Bhopal, Madhya Pradesh}
+      {B.Tech - Computer Science Engineering(AIML) - \textbf{CGPA - 8.1}}{\textbf{2022 - 2026}}
+    \resumeSubheading
+      {FIITJEE Junior College}{Hyderabad, Telangana}
+      {Higher Secondary - \textbf{Percentage - 89\%}}{\textbf{Graduated in 2022}}
+    \resumeSubheading
+        {FIITJEE World School}{Hyderabad, Telangana}
+        {High School -\textbf{CGPA - 10}}{\textbf{Graduated in 2020}}
+  \resumeSubHeadingListEnd
+
+
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C++, Java} \\ \vspace{2pt}
+     
+     \textbf{Tools}{: Git, GitHub, MySQL, Jupyter Notebook}\\ \vspace{2pt}
+     
+     \textbf{Libraries}{: TensorFlow, PyTorch, Scikit-learn, Pandas, NumPy, Matplotlib, MediaPipe, PyQt5, CatBoost} \\ \vspace{2pt}
+     
+     \textbf{Core Concepts}{: OOP, Machine Learning, Neural Networks, NLP, Computer Vision}\\ \vspace{2pt}
+     
+     \textbf{Spoken Languages}{: English, Hindi, Telugu, Marathi} \\     
+    }}
+ \end{itemize}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{\underline{Crop Yield Prediction using ANN}} \hfill 
+        \href{https://github.com/DeadBoTt-exe/Crop-Yield-Prediction-using-ANN.git}{{ (LINK)}}}{}
+
+          \resumeItemListStart
+            \resumeItem{Engineered an ANN-based crop yield forecasting system by integrating multi-factor environmental and agricultural data, improving prediction accuracy by 10–15\% compared to traditional ML models.}
+            
+            \resumeItem{Orchestrated a complete ML training pipeline using Python, TensorFlow, and Scikit-learn, optimizing data preprocessing and hyperparameters to reduce model training time by 20\% and compute cost by 10\%.}
+          \resumeItemListEnd
+          
+      \resumeProjectHeading
+          {\textbf{\underline{TarangAI}} \hfill 
+            \href{https://github.com/DeadBoTt-exe/TarangAI.git}{{ (LINK)}}}{}
+        
+          \resumeItemListStart
+            \resumeItem{Built a deep-learning-based Indian classical dance classification model by combining MediaPipe pose extraction with feature engineering and multi-output neural networks, achieving 89\% classification accuracy across multiple dance styles.}
+            
+            \resumeItem{Developed a Pose Refinement GAN to correct user dance poses in real time using pose-skeleton inputs, enhancing recognition quality by 25\% and improving feedback accuracy on posture, mudras, and facial expressions.}            
+          \resumeItemListEnd
+          
+          \resumeProjectHeading
+          {\textbf{\underline{Stock Market Analysis \& Prediction}} \hfill 
+            \href{https://github.com/DeadBoTt-exe/STOCK-MARKET-ANALYSIS-Using-Machine-learning.git}{{ (LINK)}}}{}
+          \resumeItemListStart
+            \resumeItem{Engineered a stock price forecasting application using ARIMA, Linear Regression, Random Forest, and ensemble ML models, resulting in 94\% prediction accuracy.}
+
+            \resumeItem{Implemented a complete time-series prediction pipeline with Scikit-learn, Statsmodels, Pandas, and NumPy, reducing preprocessing and feature-generation time by 25\%.}          
+          \resumeItemListEnd
+          
+          \resumeProjectHeading
+          {\textbf{\underline{SentimentR}} \hfill 
+            \href{https://github.com/DeadBoTt-exe/SentimentR.git}{{ (LINK)}}}{}
+          \resumeItemListStart
+            \resumeItem{Developed a sentiment analysis system using TF-IDF features and ML models such as Logistic Regression and SVM, achieving 91\% accuracy on text classification tasks.}
+            
+            \resumeItem{Tailored the prediction model using Logistic Regression, Naïve Bayes, and Random Forests, boosting F1-score by 10\% after optimizing feature extraction and hyperparameters.} 
+          \resumeItemListEnd
+        
+    \resumeSubHeadingListEnd
+
+
+\section{Co-Curricular Activities}
+    \resumeItemListStart            
+            \resumeItem{Python Gold Badge on \href{https://www.hackerrank.com/profile/workwiththeeye}{\underline{HackerRank}}}
+            
+            \resumeItem{Completed Machine Learning \& Self-Driving Cars: Bootcamp with Python from Udemy}
+            
+            \resumeItem{Completed Generative AI from Udemy}  
+            
+            \resumeItem{Participated in a Health Hackathon organized by Johns Hopkins University and VIT Bhopal}
+            
+            \resumeItem{Served as Team Lead for the Vitronix Club in College}
+            
+        \resumeItemListEnd
+
+%-------------------------------------------
+\end{document}
