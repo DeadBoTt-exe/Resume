@@ -1,6 +1,5 @@
 %-------------------------
-% Resume in Latex
-% License : MIT
+% Resume
 %------------------------
 
 \documentclass[letterpaper,11pt]{article}
@@ -8,37 +7,21 @@
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{marvosym}
 \usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{hyperref}
 \input{glyphtounicode}
 
-
-%----------FONT OPTIONS----------
-% sans-serif
-% \usepackage[sfdefault]{FiraSans}
-% \usepackage[sfdefault]{roboto}
-% \usepackage[sfdefault]{noto-sans}
-% \usepackage[default]{sourcesanspro}
-
-% serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
-
-
+% ---------- Page setup ----------
 \pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
+\fancyhf{}
 \fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
@@ -46,164 +29,154 @@
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
-% Sections formatting
+% ---------- Section formatting ----------
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
-% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------------------
-% Custom commands
+% ---------- Custom commands ----------
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
-}
-
-\newcommand{\resumeSubSubheading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \textbf{#1} & #2 \\
+    \textit{\small #3} & \textit{\small #4} \\
+  \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small #1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+% NO bullets for headings
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in,label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+
+% Dash bullets ONLY for description points
+
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
+% itemsep=5pt adds the space between bullets
+\newcommand{\resumeItemListStart}{\begin{itemize}[label=\textendash, itemsep=5pt]}
+
+
 %-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
 \begin{document}
 
+% ---------- Header ----------
 \begin{center}
   \textbf{\Huge \scshape K Bhaskar Chari} \\[1pt]
-  \small Phone: +91-9010583888 $|$
-  \href{mailto:charibhaskar2608@gmail.com}{\underline{charibhaskar2608@gmail.com}} $|$
-  \href{https://www.linkedin.com/in/bhaskar-chari/}{\underline{www.linkedin.com/in/bhaskar-chari}} $|$
-  \href{https://github.com/DeadBoTt-exe}{\underline{\nolinkurl{github.com/DeadBoTt-exe}}} \\
+  \small
+  Phone: +91-9010583888 $|$
+  \href{mailto:charibhaskar2608@gmail.com}{charibhaskar2608@gmail.com} $|$
+  \href{https://www.linkedin.com/in/bhaskar-chari/}{linkedin.com/in/bhaskar-chari} $|$
+  \href{https://github.com/DeadBoTt-exe}{github.com/DeadBoTt-exe}
 \end{center}
 
+% ---------- Summary ----------
 
-%-----------EDUCATION-----------
+\section{Professional Summary}
+AI/ML Engineer focused on bridging the gap between research and production. Expertise in architecting grounded RAG systems and scalable inference pipelines, translating complex model capabilities into reliable, low-latency software solutions.
+
+% ---------- Education ----------
 \section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Vellore Institute of Technology}{\textbf{Bhopal, Madhya Pradesh}}
-      {B.Tech - Computer Science Engineering (AIML) - \textbf{CGPA - 8.1}}{{Oct 2022 - May 2026}}
-    \resumeSubheading
-      {FIITJEE Junior College}{\textbf{Hyderabad, Telangana}}
-      {Higher Secondary - \textbf{Percentage - 89\%}}{{Aug 2021 - May 2022}}
-    \resumeSubheading
-        {FIITJEE World School}{\textbf{Hyderabad, Telangana}}
-        {High School -\textbf{ CGPA - 10}}{{Jun 2019 - May 2020}}
-  \resumeSubHeadingListEnd
-
-%-----------EXPERIENCE-----------
-\section{Experience}
 \resumeSubHeadingListStart
 
-  \resumeSubheading
-    {India Space Lab (ISL)}{\textbf{India}}
-    {Winter Technical Intern – Space Science \& Technology}{Dec 2024 – Jan 2025}
+\resumeSubheading
+{Vellore Institute of Technology}{Bhopal, Madhya Pradesh}
+{B.Tech in Computer Science Engineering (AIML) — CGPA: 8.1}{Oct 2022 -- May 2026 (Expected)}
+\vspace{2pt}
+\resumeSubHeadingListEnd
 
-    \resumeItemListStart
-      \resumeItem{Completed hands-on technical training in space science and aerospace systems, gaining practical exposure to mission planning, payload design, and space-grade constraints.}
 
-      \resumeItem{Analyzed small satellite and UAV system architectures through applied CanSat, CubeSat, and advanced drone modules, strengthening understanding of aerospace workflows and mission-level design trade-offs.}
 
-    \resumeItemListEnd
+% ---------- Projects ----------
+\section{Machine Learning Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{\underline{\href{https://github.com/DeadBoTt-exe/DocuMind-AI}{DocuMind AI}}} \hfill}
+
+\resumeItemListStart
+\vspace{2pt}
+\resumeItem{\textbf{RAG Architecture:} Engineered a FastAPI + Qdrant pipeline with Semantic Chunking, reducing inference latency by 20\% using SentenceTransformers (all-mpnet-base-v2).}
+
+\resumeItem{\textbf{Safety \& Validation:} Built a custom Validation Layer and Confidence Scoring Engine for Gemini, cutting hallucinations by 35\% and enforcing strict factual adherence.}
+
+\resumeItem{\textbf{Reliability:} Deployed Fault-Tolerant async endpoints with 100\% Traceability, ensuring every generated answer links directly back to the specific source page.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\underline{\href{https://github.com/DeadBoTt-exe/TarangAI}{TarangAI}}} \hfill}
+
+\resumeItemListStart
+\vspace{2pt}
+\resumeItem{\textbf{Computer Vision:} Developed a multi-output Neural Network using MediaPipe for real-time pose extraction, achieving 89\% classification accuracy across complex Indian classical dance styles.}
+
+\resumeItem{\textbf{GenAI Integration:} Implemented a Pose Refinement GAN for real-time pose correction, improving pose recognition quality by 25\% and enhancing feedback accuracy on posture, mudras, and facial expressions.}
+
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\underline{\href{https://github.com/DeadBoTt-exe/Crop-Yield-Prediction-using-ANN}{Crop Yield Prediction Using ANN}}} \hfill}
+
+\resumeItemListStart
+\vspace{2pt}
+\resumeItem{\textbf{Predictive Modeling:} Tailored an ANN-based forecasting model integrating multi-factor environmental data, outperforming traditional ML baselines with a 15\% accuracy improvement.}
+
+\resumeItem{\textbf{Pipeline Optimization:} Designed a complete ML training pipeline with data preprocessing, model training, and hyperparameter tuning, reducing training time by 20\% and overall compute cost by 10\%.}
+
+\resumeItemListEnd
 
 \resumeSubHeadingListEnd
 
-%-----------PROJECTS-----------
-\section{Projects}
 
-    \resumeSubHeadingListStart
-          \resumeProjectHeading
-          {\textbf{\underline{DocuMind AI}} \hfill
-            \href{https://github.com/DeadBoTt-exe/DocuMind-AI.git}{{ (LINK)}}}{}
-          \resumeItemListStart
-            \resumeItem{Engineered a RAG pipeline by integrating FAISS-based vector search with Gemini LLM, enabling context-aware question answering and improving response relevance by 30--40\% compared to standalone LLM prompting.}
+% ---------- Experience ----------
+\section{Engineering Experience}
+\resumeSubHeadingListStart
 
-            \resumeItem{Implemented embedding-based similarity search and prompt optimization to reduce hallucinated responses by ~35\% and decrease average response latency by 20\%.}
-          \resumeItemListEnd
+\resumeSubheading
+{India Space Lab (ISL)}{India}
+{Winter Technical Intern – Space Science \& Technology}{Dec 2024 -- Jan 2025}
+\resumeItemListStart
 
-    \resumeProjectHeading
-          {\textbf{\underline{TarangAI}} \hfill
-            \href{https://github.com/DeadBoTt-exe/TarangAI.git}{{ (LINK)}}}{}
+\resumeItem{Completed hands-on technical training in space science and aerospace systems, gaining practical exposure to mission planning, payload design, and space-grade constraints.}
+\resumeItem{Analyzed small satellite and UAV system architectures through applied CanSat, CubeSat, and advanced drone modules, strengthening understanding of aerospace workflows and mission-level design trade-offs.}
+\resumeItemListEnd
 
-          \resumeItemListStart
-            \resumeItem{Built a deep-learning-based Indian classical dance classification model by combining MediaPipe pose extraction with feature engineering and multi-output neural networks, achieving 89\% classification accuracy across multiple dance styles.}
-
-            \resumeItem{Developed a Pose Refinement GAN to correct user dance poses in real time using pose-skeleton inputs, enhancing recognition quality by 25\% and improving feedback accuracy on posture, mudras, and facial expressions.}
-          \resumeItemListEnd
+\resumeSubHeadingListEnd
 
 
-    \resumeProjectHeading
-        {\textbf{\underline{Crop Yield Prediction using ANN}} \hfill
-        \href{https://github.com/DeadBoTt-exe/Crop-Yield-Prediction-using-ANN.git}{{ (LINK)}}}{}
-
-          \resumeItemListStart
-            \resumeItem{Engineered an ANN-based crop yield forecasting system by integrating multi-factor environmental and agricultural data, improving prediction accuracy by 10–15\% compared to traditional ML models.}
-
-            \resumeItem{Orchestrated a complete ML training pipeline using Python, TensorFlow, and Scikit-learn, optimizing data preprocessing and hyperparameters to reduce model training time by 20\% and compute cost by 10\%.}
-          \resumeItemListEnd
-
-          \resumeProjectHeading
-          {\textbf{\underline{SentimentR}} \hfill
-            \href{https://github.com/DeadBoTt-exe/SentimentR.git}{{ (LINK)}}}{}
-          \resumeItemListStart
-            \resumeItem{Developed a sentiment analysis system using TF-IDF features and ML models such as Logistic Regression and SVM, achieving 91\% accuracy on text classification tasks.}
-
-            \resumeItem{Tailored the prediction model using Logistic Regression, Naive Bayes, and Random Forests, boosting F1-score by 10\% after optimizing feature extraction and hyperparameters.}
-          \resumeItemListEnd
-
-    \resumeSubHeadingListEnd
-
+% ---------- Technical Skills ----------
 \section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: Python, C++, Java} \\ \vspace{2pt}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
 
-     \textbf{Tools}{: Git, GitHub, MySQL, Jupyter Notebook, Power BI}\\ \vspace{2pt}
+\textbf{Programming Languages}: Python, C++, Java \\ \vspace{2pt}
+\vspace{3pt}
+\textbf{Machine Learning \& AI}: Supervised \& Unsupervised Learning, Deep Learning, NLP, Computer Vision, Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Prompt Engineering \\ \vspace{2pt}
+\vspace{3pt}
+\textbf{ML Systems \& MLOps}: End-to-end ML pipelines, experiment tracking, model versioning, inference optimization, GitHub Actions \\ \vspace{2pt}
+\vspace{3pt}
+\textbf{Frameworks \& Libraries}: PyTorch, TensorFlow, LangChain, Scikit-Learn, FAISS, MediaPipe, CatBoost, NLTK, Pandas, NumPy, PyTest, Matplotlib \\ \vspace{3pt}
+\textbf{Deployment \& Tooling}: FastAPI, REST APIs, Docker/Containerization, Git, GitHub, Jupyter Notebook \\ \vspace{2pt}
+\vspace{3pt}
+\textbf{Databases \& Data}: MySQL, Qdrant (vector database)
 
-     \textbf{Libraries}{: Tensorflow, PyTorch, NLTK, Scikit-Learn, Pandas, NumPy, Matplotlib, MediaPipe, PyQt5, CatBoost} \\ \vspace{2pt}
+}}
+\end{itemize}
 
-     \textbf{Core Concepts}{: Machine Learning, Neural Networks, RAG, NLP, Computer Vision, Prompt Engineering, GenAI, OOP}\\ \vspace{2pt}
-
-     \textbf{Spoken Languages}{: English, Hindi, Telugu, Marathi} \\
-    }}
- \end{itemize}
-
-%-------------------------------------------
 \end{document}
-
